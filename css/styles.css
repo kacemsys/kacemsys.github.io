@@ -10974,6 +10974,11 @@ html {
 .masthead {
   padding-top: calc(6rem + 74px);
   padding-bottom: 6rem;
+  /*background-image: url('../assets/img/techback.jpg');*/
+  /*background-size: cover; /* This property ensures the background image covers the entire header */
+  /* background-position: center; /* This property centers the background image within the header */
+  /* height: 200px; Adjust the height as needed */
+
 }
 .masthead .masthead-heading {
   font-size: 2.75rem;
@@ -11095,6 +11100,8 @@ html {
   margin-bottom: 30px;
   transition: all 0.3s ease-in-out;
   display: flex; /* Make items flex containers */
+  flex-wrap: wrap;
+  align-content: space-between;   /*Distributes space between flex lines */
   align-items: center; /* Center content vertically */
 }
 
@@ -11115,7 +11122,7 @@ html {
 
 .education-icon {
   width: 150px; /* Adjust size as needed */
-  margin-right: 20px; /* Add some spacing between the image and text */
+  margin-right: 20px;  /*Add some spacing between the image and text */
   filter: invert(1); 
 }
 
