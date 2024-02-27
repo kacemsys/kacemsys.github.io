@@ -4613,6 +4613,10 @@ textarea.form-control-lg {
 .badge:empty {
   display: none;
 }
+.badge img {
+width: 168px;
+height: 168px;
+}
 
 .btn .badge {
   position: relative;
