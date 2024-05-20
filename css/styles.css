@@ -4609,6 +4609,7 @@ textarea.form-control-lg {
   white-space: nowrap;
   vertical-align: baseline;
   border-radius: var(--bs-badge-border-radius);
+
 }
 .badge:empty {
   display: none;
@@ -11061,22 +11062,36 @@ html {
 
 .badge {
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.05);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
+
 .badge img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
 }
-
+.badge:hover::after {
+  content: "View the badge on credly website";
+  position: absolute;
+  bottom: 80px; /* Adjust positioning as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  z-index: 999; /* Ensure the text appears above the badge */
+}
 .badge:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 @media screen and (max-width: 600px) {
