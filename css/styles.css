@@ -11143,8 +11143,11 @@ html {
 
 .position-title {
     margin-top: 10px;
+    margin-left: 30px;
+    color: #6c757d;
     font-size: 18px;
 }
+
 
 .job-highlights {
     list-style-type: disc;
